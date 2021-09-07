@@ -970,6 +970,8 @@ void CAESinkAUDIOTRACK::EnumerateDevicesEx(AEDeviceInfoList &list, bool force)
 
 void CAESinkAUDIOTRACK::UpdateAvailablePassthroughCapabilities(bool isRaw)
 {
+  if (1)
+    return;
   m_info.m_deviceType = AE_DEVTYPE_HDMI;
   m_info.m_wantsIECPassthrough = false;
   m_info.m_dataFormats.push_back(AE_FMT_RAW);
